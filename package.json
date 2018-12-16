@@ -1,0 +1,15 @@
+{
+  "name": "@wonderful/easyvuex",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wonderful",
+  "license": "ISC",
+  "dependencies": {
+    "request-promise": "^4.2.2",
+    "vuex-router-sync": "^5.0.0"
+  }
+}
