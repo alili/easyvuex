@@ -66,17 +66,17 @@ modules需要和路由层级保持一致，推荐各个页面的 store modules �
 
 ## 机制
 通过 transfer 函数会对包裹的函数做如下处理:
-1. 对所有 state 声明同名的 mutations
-2. 对所有 state 声明同名的 getters
-3. 所有的 getters 为函数，提供两个参数：
+-  对所有 state 声明同名的 mutations
+-  对所有 state 声明同名的 getters
+-  所有的 getters 为函数，提供两个参数：
   - state：即 vuex getters 原 state 参数
   - get：函数，可以向上追溯各个层级的 getters
-4. actions 增加 pre 方法，pre 方法会首先执行，可用于数据预处理。
-5. actions 增加 check 方法，如果 check 返回值为 false，则 actions 提前结束。
-6. 如果存在 action 方法，则执行，action 方法提供两个参数
+-  actions 增加 pre 方法，pre 方法会首先执行，可用于数据预处理。
+-  actions 增加 check 方法，如果 check 返回值为 false，则 actions 提前结束。
+-  如果存在 action 方法，则执行，action 方法提供两个参数
   - options：即调用时提供的载荷
   - get：函数，可以向上追溯各个层级的 getters
-7. 否则如果存在 link 方法，会以 method 方式（get/post），发送 setting 作为参数
+-  否则如果存在 link 方法，会以 method 方式（get/post），发送 setting 作为参数
   - link 可以是字符串或者函数
   - link 函数提供一个参数
     - options：即调用时提供的载荷
@@ -84,7 +84,7 @@ modules需要和路由层级保持一致，推荐各个页面的 store modules �
   - setting 函数提供两个参数：
     - context：当前 store 上下文
     - options：即调用时提供的载荷
-8. 调用 dispose 方法，处理 action 或 link 接口的返回值
+-  调用 dispose 方法，处理 action 或 link 接口的返回值
   - dispose 函数提供三个参数：
     - {commit, get} 可以向上追溯各个层级的 commit和getters
     - res action 或 link 接口的返回值
