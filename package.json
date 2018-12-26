@@ -13,6 +13,7 @@
   "author": "wonderful",
   "license": "ISC",
   "dependencies": {
+    "qs": "^6.6.0",
     "request-promise": "^4.2.2",
     "vuex-router-sync": "^5.0.0"
   }

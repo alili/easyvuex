@@ -38,6 +38,8 @@ Vue.use(easyVuex, {
   },
   ...
 ```
+此处的 zoneList 等同于 mapGetters 获取的 zoneList 变量，同时对 zoneList 的修改，自动触发 commit('zoneList', newVal)
+
 在任意 vue 实例中，增加了 do 方法，作为 dispatch 的扩展，拥有向上追溯调用 actions 的机制。
 在任意 vuex 实例中，内置了 clone 方法(暂用)
 
