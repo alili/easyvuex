@@ -1,6 +1,6 @@
 {
-  "name": "@wonderful/easyvuex",
-  "version": "1.0.21",
+  "name": "@didi/easyvuex",
+  "version": "1.0.20",
   "description": "",
   "main": "index.js",
   "scripts": {
