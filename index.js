@@ -1,2 +1,2 @@
-export { easyVuex } from './lib/easyvuex'
+export { puff } from './lib/puff'
 export { transfer } from './lib/transfer'
